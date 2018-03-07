@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/lib/style.css">
+    <link rel="stylesheet" href="static/css/cart.css">
+    <script src="static/lib/vue.js"></script> 
+    <script src="static/lib/vue-router.js"></script>
+    <script src="static/lib/index.js"></script>
+    <title>购物车</title>
+</head>
+<body>
+    <div id="cart">
+        <header id="header">
+            <span class="goback">返回</span>
+            <span class="center">购物车</span> 
+            <span class="edit">编辑</span>
+        </header>
+        <section id="content">
+            <div class="items">
+                <div class="items_selected">
+                    <input type="radio">
+                </div>
+                <div class="items_details">
+                    <p class="goods_name">
+                        <span class="text">天丝四件套</span>
+                        <span class="editicon"></span>
+                    </p>
+                    <p class="upccode">69234506533</p>
+                    <div class="price_quantity">
+                        <div class="items_price">￥12.00</div>
+                        <div class="quantity_component">
+                            <span class="quantity">× 2</span>
+                            <!-- <span class="minus"> - </span>
+                            <input type="number" id="quantity">
+                            <span class="add">+</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer_checkall">
+                <input type="radio">
+            </div>
+            <div class="footer_cash">
+                <span class="collectMoney">
+                    <span class="total">合计 ： </span>
+                    <span class="money">￥ 12.09</span>
+                </span>
+                <button class="collect">去结算</button>
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>
